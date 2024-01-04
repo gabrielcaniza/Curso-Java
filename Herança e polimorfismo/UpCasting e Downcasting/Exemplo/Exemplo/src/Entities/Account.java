@@ -6,7 +6,6 @@ public class Account {
     protected Double balance;
 
     public Account() {
-
     }
 
     public Account(Integer number, String holder, Double balance) {
@@ -35,16 +34,17 @@ public class Account {
         return balance;
     }
 
-    public void withdraw(double amount) {
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
+    public void Withdraw(double amount) {
         balance -= amount;
+
     }
 
     public void deposit(double amount) {
         balance += amount;
-    }
 
-    public void Witdraw(double amount) {
-        balance -= amount;
     }
-
 }
