@@ -24,12 +24,12 @@ public class App {
 
         System.out.printf("Total balance: %.2f%n", sum);
 
-        for(Account acc: list){
+        for (Account acc : list) {
             acc.deposit(10.0);
         }
 
-        for(Account acc : list){
-            System.out.printf("updated for account %d: %.2f%n " , acc.getNumber(), acc.getBalance());
+        for (Account acc : list) {
+            System.out.printf("updated for account %d: %.2f%n ", acc.getNumber(), acc.getBalance());
         }
 
     }
