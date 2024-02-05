@@ -1,7 +1,6 @@
 package aplication;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 import entities.product;
@@ -15,11 +14,7 @@ public class App {
         list.add(new product("notebook", 1200.0));
         list.add(new product("Tablet", 450.00));
 
-        
-   
-
-
-        list.sort((p1,p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
+        list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
         for (product p : list) {
             System.out.println(p);
