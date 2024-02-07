@@ -8,7 +8,6 @@ import java.sql.Statement;
 
 public class DB {
 
-
     //Inicio do login e senha no my sql
     private static final String url = "jdbc:mysql://localhost:3306/coursejdbc";
     private static final String user = "root";
@@ -17,8 +16,6 @@ public class DB {
 
     // comando pra iniciar conexão com o banco de dados
     private static Connection conn;
-
-
 
     public static Connection getConnection() {
         try {
